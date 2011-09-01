@@ -3,9 +3,38 @@
 <head>
     <title>HTML5 Feature Detection</title>
 	<script type="text/javascript">
+
+	function check_geo() {
+    }
+
+    function check_canvas() {
+    }
+    
+    function check_video() {
+    }
+
+    function check_input_support(input_type) {
+    }
 	</script>
 </head>
 <body>
-<h1>HTML5 Feature Detection</h1>
+<h1>HTML5 Detection Techniques</h1>
+
+<h2>Ask the global object if a property exists:</h2>
+<button name="geo" id="geo" onclick="check_geo();">Geo Detection</button>
+<br/>
+
+<h2>Look for a property:</h2>
+<button name="can" id="canvas" onclick="check_canvas();">Canvas Detection</button>
+<br/>
+
+<h2>Look for a method:</h2>
+<button name="vid" id="video" onclick="check_video();">Video Detection</button>
+<br/>
+
+<h2>Set a property and see if the value sticks:</h2>
+<button name="date" id="date_check" onclick="check_input_support('date');">Date Picker Detection</button>
+<br/>
+
 </body>
 </html>
