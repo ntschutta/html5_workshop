@@ -5,16 +5,52 @@
 	<script type="text/javascript">
 
 	function check_offline() {
+		if(!!window.applicationCache) {
+			show_results("offline supported!");
+		} else {
+			show_results("offline NOT supported")
+		}
     }
 
+	function supports_placeholder() {
+		var i = document.createElement('input');
+		return 'placeholder' in i;
+	}
+	
     function check_placeholder() {
+		if(supports_placeholder) {
+			show_results("placeholder supported!");
+		} else {
+			show_results("placeholder NOT supported")
+		}		
     }
     
     function check_video() {
+		if(document.createElement('video').canPlayType) {
+			show_results("video supported!");
+		} else {
+			show_results("video NOT supported")
+		}
+    }
+
+    function supports_input (input_type) {
+        var input = document.createElement("input");
+        input.setAttribute("type", input_type);
+        return input.type !== "text";
     }
 
     function check_input_support(input_type) {
+		if(supports_input(input_type)) {
+			show_results(input_type + " supported!");
+		} else {
+			show_results(input_type + " NOT supported")
+		}		
     }
+
+    function show_results(message) {
+        alert(message);
+    }
+
 	</script>
 </head>
 <body>
