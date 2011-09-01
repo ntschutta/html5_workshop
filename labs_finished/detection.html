@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>HTML5 Feature Detection</title>
+	<script type="text/javascript">
+
+	function check_offline() {
+    }
+
+    function check_placeholder() {
+    }
+    
+    function check_video() {
+    }
+
+    function check_input_support(input_type) {
+    }
+	</script>
+</head>
+<body>
+<h1>HTML5 Detection Techniques</h1>
+
+<h2>Ask the global object if a property exists:</h2>
+<button name="offline" id="offline" onclick="check_offline();">Offline</button>
+<br/>
+
+<h2>Look for a property:</h2>
+<button name="placeholder" id="placeholder" onclick="check_placeholder();">Placeholder Detection</button>
+<br/>
+
+<h2>Look for a method:</h2>
+<button name="vid" id="video" onclick="check_video();">Video Detection</button>
+<br/>
+
+<h2>Set a property and see if the value sticks:</h2>
+<button name="date" id="date_check" onclick="check_input_support('date');">Date Picker Detection</button>
+<br/>
+
+</body>
+</html>
