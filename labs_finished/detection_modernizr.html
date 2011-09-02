@@ -36,6 +36,22 @@
 		}		
     }
 
+	function check_video_codec() {
+		var supported_video = "This browser supports: ";
+		if (Modernizr.video) {
+		  if (Modernizr.video.webm) {
+		    supported_video += "webm ";
+		  }
+		  if (Modernizr.video.ogg) {
+		    supported_video += "ogg ";
+		  }
+		  if (Modernizr.video.h264){
+		    supported_video += "h264 ";
+		  }
+		}
+		show_results(supported_video);
+	}
+
     function show_results(message) {
         alert(message);
     }
@@ -59,6 +75,10 @@
 
 <h2>Instead of setting a property and seeing if the value sticks:</h2>
 <button name="date" id="date_check" onclick="check_input_support();">Email Detection</button>
+<br/>
+
+<h2>Checking for video formats:</h2>
+<button name="codec" id="codec" onclick="check_video_codec();">Video Codecs</button>
 <br/>
 
 </body>
