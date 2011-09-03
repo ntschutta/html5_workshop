@@ -8,32 +8,12 @@
         var canvas = document.getElementById("canvas");
         var ctx = canvas.getContext("2d");
 		ctx.lineWidth=5;
-		draw_blue(ctx);
-		draw_black(ctx);
-		draw_red(ctx);
-		draw_yellow(ctx);
-		draw_green(ctx);
-    }
-
-	function draw_blue(ctx) {
 		draw_circle(ctx, "blue", 75, 75);
-	}
-
-	function draw_black(ctx) {
 		draw_circle(ctx, "black", 180, 75);
-	}
-	
-	function draw_red(ctx) {
 		draw_circle(ctx, "red", 285, 75);
-	}
-
-	function draw_yellow(ctx) {
 		draw_circle(ctx, "yellow", 125, 125);
-	}
-
-	function draw_green(ctx) {
 		draw_circle(ctx, "green", 230, 125);
-	}
+    }
 
 	function draw_circle(ctx, color, x, y) {
 		ctx.beginPath();
