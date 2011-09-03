@@ -1,0 +1,39 @@
+<!DOCTYPE >
+<html>
+<head>
+	<title>HTML5 Input Types</title>
+	<script src="../javascript/jquery-1.6.2.js"></script>
+    <script>
+		function addOne() {
+			var age = document.getElementById("age");
+			age.stepUp(1);
+		}
+		
+		function minusOne(){
+			var age = document.getElementById("age");
+			age.stepDown(1);			
+		}
+		
+		function typeOfNumber(){
+			var age = document.getElementById("age");
+			var ageVal = age.valueAsNumber;
+			alert(typeof ageVal);		
+		}
+		
+		$(document).ready(function() {
+			$('#plus').click(addOne);
+			$('#minus').click(minusOne);
+			$('#typeOf').click(typeOfNumber);
+		});
+	</script>
+</head>
+<body>
+	<h1>HTML5 Adds New Input Types</h1>
+	<form>
+		Age: <input type="number" size=4 value="25" id="age"/> <br/><br/>
+		<input type="button" id="plus" value="Increment"/>
+		<input type="button" id="minus" value="Decrement"/>
+		<input type="button" id="typeOf" value="Type Of Number"/>
+	</form>
+</body>
+</html>
