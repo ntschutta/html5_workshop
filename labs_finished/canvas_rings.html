@@ -7,12 +7,50 @@
     function draw() {
         var canvas = document.getElementById("canvas");
         var ctx = canvas.getContext("2d");
-		
+		draw_blue(ctx);
+		draw_black(ctx);
+		draw_red(ctx);
+		draw_yellow(ctx);
+		draw_green(ctx);
     }
 
+	function draw_blue(ctx) {
+		ctx.beginPath();
+		ctx.strokeStyle = "blue";
+		ctx.arc(75,75,50,0,Math.PI*2,true);
+		ctx.stroke();			
+	}
+	
+	function draw_black(ctx) {
+		ctx.beginPath();
+		ctx.strokeStyle = "black";
+		ctx.arc(180,75,50,0,Math.PI*2,true);
+		ctx.stroke();			
+	}
+	
+	function draw_red(ctx) {
+		ctx.beginPath();
+		ctx.strokeStyle = "red";
+		ctx.arc(285,75,50,0,Math.PI*2,true);
+		ctx.stroke();			
+	}
+
+	function draw_yellow(ctx) {
+		ctx.beginPath();
+		ctx.strokeStyle = "yellow";
+		ctx.arc(115,125,50,0,Math.PI*2,true);
+		ctx.stroke();			
+	}
+
+	function draw_green(ctx) {
+		ctx.beginPath();
+		ctx.strokeStyle = "green";
+		ctx.arc(230,125,50,0,Math.PI*2,true);
+		ctx.stroke();			
+	}
 	</script>
 </head>
-<body>
+<body onload="draw()">
 <h1>Olympic Rings</h1>
 <canvas id="canvas" width="800" height="800">
    Put fallback content here...perhaps an image.
