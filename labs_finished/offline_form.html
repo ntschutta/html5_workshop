@@ -1,0 +1,80 @@
+<!DOCTYPE >
+<html>
+<head>
+	<title>HTML5 Offline Support</title>
+    <script src="../javascript/modernizr-2.0.6.js"></script>
+    <script src="../javascript/jquery-1.6.2.js"></script>
+    <script type="application/javascript">
+	function storeInput() {
+		if (Modernizr.localstorage) {
+			localStorage.setItem("name", $("#name").val());
+		  	localStorage["age"] = $("#age").val();
+		  	localStorage["bday"] = $("#bday").val();
+		  	localStorage["gender"] = $("#gender").val();
+		  	localStorage["phone"] = $("#phone").val();
+		  	localStorage["email"] = $("#email").val();
+		} else {
+			noSupport();
+		}
+	}
+	
+	function retrieveInput() {
+		if (Modernizr.localstorage) {
+			$("#name").val(localStorage.getItem("name"));
+		  	$("#age").val(parseInt(localStorage["age"])); 
+			$("#bday").val(localStorage.getItem("bday"));
+			$("#gender").val(localStorage.getItem("gender"));
+		  	$("#phone").val(localStorage["phone"]); 
+		  	$("#email").val(localStorage["email"]); 
+		} else {
+			noSupport();
+		}		
+	} 
+	
+	function clearValues() {
+		localStorage.clear();
+		$("#info").html("");
+		$(".field").val("");
+	}
+	
+	function showKeys2() {
+		var numberOfKeys = localStorage.length;
+		var keyInfo = "The keys are: ";
+		var keyList = "<ul>";
+		for (i = 0; i < numberOfKeys; i++) {
+			var keyItem = "<li>" + localStorage.key(i) + "</li>";
+			keyList += keyItem;
+		}
+		keyInfo += keyList + "</ul>";
+		$("#info").html("There are: " + numberOfKeys + " items stored locally. " + keyInfo);
+	}
+	
+	function showKeys() {
+		alert("hi");
+	}
+	
+	function noSupport() {
+		alert("sorry, your browser doesn't support this feature");
+	}
+	</script>
+</head>
+<body>
+	<h1>HTML5 Adds Offline Support</h1>
+	<form>
+		Name: <input type="text" id="name" class="field" autofocus required/> <br/><br/>
+		Age: <input type="number" id="age" min="10" class="field"/> <br/><br/>
+		Birthdate: <input type="date" id="bday" class="field"/> <br/><br/>
+		Gender: <select id="gender" class="field"/>
+			<option value="male">Male</option>
+	    	<option value="female">Female</option>
+			</select><br/><br/>
+		Phone: <input type="tel" id="phone" placeholder="nnn.nnn.nnnn" class="field"/> <br/><br/>
+		Email: <input type="email" id="email" class="field"/> <br/><br/>
+		<button type="button" id="store" onclick="storeInput()">Store Locally</button>
+		<button type="button" id="retrieve" onclick="retrieveInput()">Retrieve Locally</button>
+		<button type="button" id="showKeys" onclick="showKeys()">Show Keys</button>
+		<button type="button" id="clear" onclick="clearValues()">Clear Data</button>
+		<div id="info"><div>
+	</form>
+</body>
+</html>
