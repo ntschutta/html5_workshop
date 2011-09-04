@@ -22,8 +22,8 @@
 		if (Modernizr.localstorage) {
 			$("#name").val(localStorage.getItem("name"));
 		  	$("#age").val(parseInt(localStorage["age"])); 
-			$("#bday").val(localStorage.getItem("bday"));
-			$("#gender").val(localStorage.getItem("gender"));
+			$("#bday").val(localStorage["bday"]);
+			$("#gender").val(localStorage["gender"]);
 		  	$("#phone").val(localStorage["phone"]); 
 		  	$("#email").val(localStorage["email"]); 
 		} else {
@@ -37,7 +37,7 @@
 		$(".field").val("");
 	}
 	
-	function showKeys2() {
+	function showKeys() {
 		var numberOfKeys = localStorage.length;
 		var keyInfo = "The keys are: ";
 		var keyList = "<ul>";
@@ -48,11 +48,7 @@
 		keyInfo += keyList + "</ul>";
 		$("#info").html("There are: " + numberOfKeys + " items stored locally. " + keyInfo);
 	}
-	
-	function showKeys() {
-		alert("hi");
-	}
-	
+		
 	function noSupport() {
 		alert("sorry, your browser doesn't support this feature");
 	}
@@ -68,11 +64,11 @@
 			<option value="male">Male</option>
 	    	<option value="female">Female</option>
 			</select><br/><br/>
-		Phone: <input type="tel" id="phone" placeholder="nnn.nnn.nnnn" class="field"/> <br/><br/>
+		Phone: <input type="text" id="phone" placeholder="nnn.nnn.nnnn" class="field"/> <br/><br/>
 		Email: <input type="email" id="email" class="field"/> <br/><br/>
 		<button type="button" id="store" onclick="storeInput()">Store Locally</button>
 		<button type="button" id="retrieve" onclick="retrieveInput()">Retrieve Locally</button>
-		<button type="button" id="showKeys" onclick="showKeys()">Show Keys</button>
+		<button type="button" id="show" onclick="showKeys()">Show Keys</button>
 		<button type="button" id="clear" onclick="clearValues()">Clear Data</button>
 		<div id="info"><div>
 	</form>

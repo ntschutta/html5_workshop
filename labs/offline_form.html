@@ -10,18 +10,18 @@
 <body>
 	<h1>HTML5 Adds Offline Support</h1>
 	<form>
-		Name: <input type="text" id="name" class="field" autofocus required/> <br/><br/>
+		Name: <input type="text" id="name" autofocus required/> <br/><br/>
 		Age: <input type="number" id="age" min="10" class="field"/> <br/><br/>
 		Birthdate: <input type="date" id="bday" class="field"/> <br/><br/>
 		Gender: <select id="gender" class="field"/>
 			<option value="male">Male</option>
 	    	<option value="female">Female</option>
 			</select><br/><br/>
-		Phone: <input type="tel" id="phone" placeholder="nnn.nnn.nnnn" class="field"/> <br/><br/>
+		Phone: <input type="text" id="phone" placeholder="nnn.nnn.nnnn" class="field"/><br/><br/>
 		Email: <input type="email" id="email" class="field"/> <br/><br/>
 		<button type="button" id="store" onclick="storeInput()">Store Locally</button>
 		<button type="button" id="retrieve" onclick="retrieveInput()">Retrieve Locally</button>
-		<button type="button" id="showKeys" onclick="showKeys()">Show Keys</button>
+		<button type="button" id="show" onclick="showKeys()">Show Keys</button>
 		<button type="button" id="clear" onclick="clearValues()">Clear Data</button>
 		<div id="info"><div>
 	</form>
