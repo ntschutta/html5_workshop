@@ -1,0 +1,4 @@
+Feature Detection
+
+* Using the four detection techniques, add the proper code to the four empty methods
+* ${extract}/html5_workshop/labs/detection.html

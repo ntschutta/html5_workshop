@@ -1,0 +1,6 @@
+Geolocation
+
+* Using the geolocation API, create a function that displays your current latitude and longitude
+* Handle the situation where a user opts out
+* Handle the situation where location cannot be determined
+* ${extract}/html5_workshop/labs/geolocation.html

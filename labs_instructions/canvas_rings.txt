@@ -1,0 +1,4 @@
+Canvas Rings
+
+* Using the various canvas methods, draw the Olympic Rings
+* ${extract}/html5_workshop/labs/canvas_rings.html

@@ -1,0 +1,7 @@
+Fun with Numbers
+
+* Convert the text field to a number
+* Write a function that adds 1 to the number
+* Write a function that subtracts 1 from the number
+* Write a function to display the type of the input field using valueAsNumber 
+* ${extract}/html5_workshop/labs/numbers.html

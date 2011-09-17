@@ -1,0 +1,5 @@
+New Semantic Elements
+
+* Take the sample web page and “convert” it to use HTML5 semantic elements
+* View the page in various browsers
+* ${extract}/html5_workshop/labs/semantic_elements.html

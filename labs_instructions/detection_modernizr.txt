@@ -1,0 +1,4 @@
+Feature Detection w/ Modernizr
+
+* Using Modernizr, add the proper code to the four empty methods
+* ${extract}/html5_workshop/labs/detection_modernizr.html

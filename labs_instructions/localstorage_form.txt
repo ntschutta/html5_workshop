@@ -1,0 +1,7 @@
+Local Storage
+
+* Add a function that stores the current values locally
+* Add a function that retrieves the values in local storage
+* Add a function that displays the locally stored values
+* Add a function that clears local storage
+* ${extract}/html5_workshop/labs/localstorage_form.html

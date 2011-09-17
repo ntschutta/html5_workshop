@@ -1,0 +1,8 @@
+Forms
+
+* Take the sample web page and “convert” it to use HTML5 form elements
+* Make a field required
+* Put focus in the first field
+* Add placeholder text
+* Submit the form in various browsers
+* ${extract}/html5_workshop/labs/forms.html
