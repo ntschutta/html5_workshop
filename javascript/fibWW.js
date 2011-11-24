@@ -1,9 +1,9 @@
-onmessage = callFib;
+
 
 function callFib(event) {
-	var input = event.data;
+
 	var result = fib(input);
-	postMessage(result);
+
 }
 
 function fib(n) {

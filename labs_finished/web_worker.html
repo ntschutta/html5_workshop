@@ -17,7 +17,7 @@
 	}
 
 	function calculateFibWW() {
-		var worker = new Worker("../javascript/fibWW.js");
+		var worker = new Worker("../javascript/fibWW_finished.js");
 		
 		var input = $("#num").val();
 		worker.postMessage(input);
