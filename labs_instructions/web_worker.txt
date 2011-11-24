@@ -1,0 +1,6 @@
+Web Worker
+
+* Implement calculateFibWW
+* Convert fibWW.js to be a web worker
+* Use a web worker to call fibWW.js
+* ${extract}/html5_workshop/labs/web_worker.html
