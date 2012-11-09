@@ -1,3 +1,7 @@
 jQuery Style Selectors
 
+* Display the student's name retrieving the element by ID
+* Display the student's age retrieving the element by class
+* Display the first item in the list retrieving the element with a child selector
+* Display the third item in the list retrieving all the li elements
 * ${extract}/html5_workshop/labs/selectors.html
