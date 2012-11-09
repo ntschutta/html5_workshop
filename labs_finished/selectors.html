@@ -1,0 +1,51 @@
+<!DOCTYPE >
+<html>
+<head>
+	<title>HTML5 Selectors</title>
+	<script>
+	function findById() {
+		var item = document.querySelector("#name");
+		display(item.value);
+    }
+
+	function findByClass() {
+		var item = document.querySelector(".foo");
+		display(item.value);
+    }
+
+	function findByElement() {
+		var item = document.querySelector("div>ol>li");
+		display(item.innerHTML);
+    }
+
+	function findByAll() {
+		var item = document.querySelectorAll("li");
+		display(item[2].innerHTML);
+    }
+
+	function display (value) {
+		//console.log(value);
+		alert(value);
+	}
+	</script>
+</head>
+<body>
+	<h1>HTML5 Introduces jQuery Style Selectors</h1>
+	Name: <input type="text" id="name" value="Student"> <br/><br/>
+	Age: <input type="number" name="age" min="10" value="35" class="foo"/> <br/><br/>
+	Birthdate: <input type="date" name="bday"/> <br/><br/>
+	<div id="list">
+		<ol>
+			<li>Item One</li>
+			<li>Item Two</li>
+			<li>Item Three</li>
+			<li>Item Four</li>
+			<li>Item Five</li>
+		</ol>
+	</div>
+	<button name="byId" id="byId" onclick="findById();">Select By ID</button>
+	<button name="byClass" id="byClass" onclick="findByClass();">Select By Class</button>
+	<button name="byElement" id="byElement" onclick="findByElement();">Select By Element</button>
+	<button name="byAll" id="byAll" onclick="findByAll();">Select All By Element</button>
+</body>
+</html>
