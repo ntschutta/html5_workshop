@@ -15,10 +15,10 @@ As we create richer and richer clients, we're writing more and more JavaScript. 
 ##Prerequisites##
 Attendees are expected to have a laptop (or be very good at quickly making friends with someone that has one). On said laptop, you should have at least one (ideally multiple) modern browser:
 
-*[Safari](http://www.apple.com/safari/)
-*[Chrome](https://www.google.com/intl/en/chrome/browser/)
-*[Firefox](http://www.mozilla.org/en-US/firefox/new/)
-*[Opera](http://www.opera.com)
+* [Safari](http://www.apple.com/safari/)
+* [Chrome](https://www.google.com/intl/en/chrome/browser/)
+* [Firefox](http://www.mozilla.org/en-US/firefox/new/)
+* [Opera](http://www.opera.com)
 
 In addition, you should have a text editor though you can certainly load the labs into an IDE if you wish. The labs do not require any additional installation beyond cloning the repository to some location on your hard drive.
 
