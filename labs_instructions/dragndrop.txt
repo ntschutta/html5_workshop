@@ -1,0 +1,7 @@
+HTML5 Drag and Drop
+
+* Make the two images draggable
+* Make the text div draggable
+* Make the ul draggable
+* When dropped on the target, add the dragged item to the target
+* ${extract}/html5_workshop/labs/dragndrop.html
