@@ -1,0 +1,6 @@
+History API
+
+* Add "dummy" pages to the browser's history stack
+* Implement the forward and back buttons to navigate the history stack
+* Implement the length function to show how many items are in history
+* ${extract}/html5_workshop/labs/history.html
