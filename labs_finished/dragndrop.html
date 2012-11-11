@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>HTML5 Has Drag and Drop Support</title>
+    <script src="../javascript/modernizr-2.6.2.js"></script>
+	
+	<style>
+	    #dropTarget {
+		  width:300px;
+		  height:300px;
+		  padding:10px;
+		  border:1px solid #aaaaaa;
+		}
+	</style>
+	
+	<script>
+    function allowDrop(ev) {
+	    ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("Text", ev.target.id);
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+		ev.dataTransfer.effectAllowed = "move";
+        var data = ev.dataTransfer.getData("Text");
+        ev.target.appendChild(document.getElementById(data));	
+    }	
+
+	</script>
+</head>
+<body>
+<h1>Drag and Drop</h1>
+    <div id="dropTarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	
+	<img id="drag1" src="../images/rwx_logo.png" draggable="true" ondragstart="drag(event)">
+	<img id="drag2" src="../images/nfjs_logo.gif" draggable="true" ondragstart="drag(event)">
+	<p>
+	<div draggable="true" id="aDiv" ondragstart="drag(event)">
+		You can drag a div too.
+	</div>
+	<p>
+		Or even a list:
+	<ul draggable="true" id="list" ondragstart="drag(event)">
+		<li>Item one</li>
+		<li>Item two</li>
+	</ul>
+</body>
+</html>
