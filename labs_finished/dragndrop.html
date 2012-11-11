@@ -34,16 +34,16 @@
 <body>
 <h1>Drag and Drop</h1>
     <div id="dropTarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-	
+	<p>
 	<img id="drag1" src="../images/rwx_logo.png" draggable="true" ondragstart="drag(event)">
 	<img id="drag2" src="../images/nfjs_logo.gif" draggable="true" ondragstart="drag(event)">
 	<p>
-	<div draggable="true" id="aDiv" ondragstart="drag(event)">
+	<div id="aDiv" draggable="true" ondragstart="drag(event)">
 		You can drag a div too.
 	</div>
 	<p>
 		Or even a list:
-	<ul draggable="true" id="list" ondragstart="drag(event)">
+	<ul id="list" draggable="true" ondragstart="drag(event)">
 		<li>Item one</li>
 		<li>Item two</li>
 	</ul>
