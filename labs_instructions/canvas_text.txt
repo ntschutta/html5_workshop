@@ -1,0 +1,7 @@
+Canvas Text
+
+* Using the various canvas text methods:
+** Draw the text from an input box
+** Change the color of the text based on user input
+** Allow the user to specify italics
+* ${extract}/html5_workshop/labs/canvas_text.html
