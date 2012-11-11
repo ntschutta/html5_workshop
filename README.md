@@ -2,7 +2,13 @@
 So what is this? It's an HTML5 workshop that I'm giving (first run at Strange Loop https://thestrangeloop.com/) The goal is simple: get people up to speed on HTML5. Here's the conference blurb:
 
 ##Conference Blurb##
-This workshop is for web developers showing them how they can leverage HTML5 in the applications they are building today. We’ll start with a gentle overview describing just what HTML5 is all about and then we’ll delve into the details. We’ll look at the new elements HTML5 brings to the table, why canvas isn’t just something you find in the art department, how geolocation can find Waldo and much much more.
+Interested in HTML5? Want a chance to play around with the latest and greatest in web app development? This workshop is for you! We'll cover feature detection, web forms, the new HTML elements, take a spin around the canvas, audio, video and we'll finish up with offline/local storage and web sockets.
+
+Before you can take advantage of a new HTML5 feature, you have to make sure a given browser can support it. This section will cover the basics of detection as well as getting the most out of rocking cool libraries like Modernizer. We'll also look at just what to do when a browser doesn't support a feature you're trying to leverage.
+
+Along with a new human type-able doctype, HTML5 introduces several new semantic elements. Recognizing that nearly every website in existence has a header, a footer and some navigation divs, HTML5 gives us a header, a footer and a nav element along with a few others. HTML5 seeks to pave cowpaths, not force the web to bend to its ways...
+
+One of the most exciting features of HTML5 is the canvas, a space you can use to draw anything from shapes to text to, well, anything! From basic drawing to graphs to full fledged games, canvas opens up a whole new world of possibility, a world sans browser plugins. Speaking of the absence of plugins, we'll look at what it takes to add video and audio to your pages.
 
 #Your Guide#
 For those that are curious about *me*, here's my bio:
