@@ -1,0 +1,5 @@
+Offline Detector
+
+* Create a method that shows the network status
+* Bind to the online and offline events triggering the method 
+* ${extract}/html5_workshop/labs/offline.html
