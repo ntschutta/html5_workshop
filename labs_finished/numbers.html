@@ -2,24 +2,24 @@
 <html>
 <head>
 	<title>HTML5 Input Types</title>
-	<script src="../javascript/jquery-1.6.2.js"></script>
+	<script src="../javascript/jquery-2.1.1.js"></script>
     <script>
 		function addOne() {
 			var age = document.getElementById("age");
 			age.stepUp(1);
 		}
-		
+
 		function minusOne(){
 			var age = document.getElementById("age");
-			age.stepDown(1);			
+			age.stepDown(1);
 		}
-		
+
 		function typeOfNumber(){
 			var age = document.getElementById("age");
 			var ageVal = age.valueAsNumber;
-			alert(typeof ageVal);		
+			alert(typeof ageVal);
 		}
-		
+
 		$(document).ready(function() {
 			$('#plus').click(addOne);
 			$('#minus').click(minusOne);

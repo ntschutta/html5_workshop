@@ -16,15 +16,15 @@
 		var i = document.createElement('input');
 		return 'placeholder' in i;
 	}
-	
+
     function check_placeholder() {
 		if(supports_placeholder) {
 			show_results("placeholder supported!");
 		} else {
 			show_results("placeholder NOT supported")
-		}		
+		}
     }
-    
+
     function check_video() {
 		if(document.createElement('video').canPlayType) {
 			show_results("video supported!");
@@ -44,7 +44,7 @@
 			show_results(input_type + " supported!");
 		} else {
 			show_results(input_type + " NOT supported")
-		}		
+		}
     }
 
     function show_results(message) {

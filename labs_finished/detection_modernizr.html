@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>HTML5 Feature Detection</title>
-    <script src="../javascript/modernizr-2.0.6.js"></script>
+    <script src="../javascript/modernizr-2.6.2.js"></script>
 	<script>
 	function check_offline() {
 		if(Modernizr.applicationcache) {
@@ -17,9 +17,9 @@
 			show_results("placeholder supported!");
 		} else {
 			show_results("placeholder NOT supported")
-		}		
+		}
     }
-    
+
     function check_video() {
 		if(Modernizr.video) {
 			show_results("video supported!");
@@ -33,7 +33,7 @@
 			show_results("email supported!");
 		} else {
 			show_results("email NOT supported")
-		}		
+		}
     }
 
 	function check_video_codec() {

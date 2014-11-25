@@ -3,13 +3,13 @@
 <head>
     <title>HTML5 Web Workers</title>
 	<script src="../javascript/fib.js"></script>
-	<script src="../javascript/jquery-1.7.js"></script>
+	<script src="../javascript/jquery-2.1.1.js"></script>
 	<script>
 	$(document).ready(function(){
 		$("#callFib").click(calculateFib);
 		$("#callFibworker").click(calculateFibWW);
 	});
-	
+
 	function calculateFib() {
 		var input = $("#num").val();
 		var result = fib(input);
@@ -24,7 +24,7 @@
 <body>
 	<h1>HTML5 Web Workers</h1>
  <body>
-	Enter a number: <input type="number" id="num"value="1"> 
+	Enter a number: <input type="number" id="num"value="1">
 	<button id="callFib" >Find Fib</button>
 	<button id="callFibworker" >Find Fib Web Worker</button>
 	</p>

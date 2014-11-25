@@ -3,33 +3,33 @@
 <head>
     <title>HTML5 Canvas Text</title>
     <script src="../javascript/modernizr-2.6.2.js"></script>
-	
+
 	<style>
 	    canvas {border: 2px solid grey}
 	</style>
-	
+
 	<script>
     function drawIntro() {
         var canvas = document.getElementById("canvas");
         var ctx = canvas.getContext("2d");
 		ctx.fillStyle = "black";
-		ctx.font = "bold 1.5em sans-serif"; 
+		ctx.font = "bold 1.5em sans-serif";
 		ctx.textalign = "left";
 		ctx.fillText("Canvas let's you write too...", 20, 40);
 	}
-	
+
 	function show() {
         var canvas = document.getElementById("canvas");
         var ctx = canvas.getContext("2d");
 		resetCanvas(ctx, canvas);
-		
+
 		var value = document.getElementById("showMe").value;
 		ctx.fillStyle = getColor();
-		
+
 		if (isItalic()) {
 		  ctx.font = "italic 2.0em serif";
-	    }	
-		ctx.fillText(value, 20, 80);		
+	    }
+		ctx.fillText(value, 20, 80);
 	}
 
 	function getColor() {
@@ -38,17 +38,17 @@
 		var textColor = selectObj[index].value;
 		return textColor;
 	}
-	
+
 	function isItalic() {
 		var isItalic = document.getElementById("italic");
 		return isItalic.checked;
 	}
-	
+
 	function resetCanvas(ctx, canvas) {
 		ctx.clearRect(0,0,canvas.width,canvas.height);
 		drawIntro();
 	}
-	
+
 	</script>
 </head>
 <body onload="drawIntro()">

@@ -3,7 +3,7 @@
 <head>
     <title>HTML5 Has Drag and Drop Support</title>
     <script src="../javascript/modernizr-2.6.2.js"></script>
-	
+
 	<style>
 	    #dropTarget {
 		  width:300px;
@@ -12,22 +12,22 @@
 		  border:1px solid #aaaaaa;
 		}
 	</style>
-	
+
 	<script>
     function allowDrop(ev) {
 	    ev.preventDefault();
     }
 
     function drag(ev) {
-        ev.dataTransfer.setData("Text", ev.target.id);
+        ev.dataTransfer.setData("bob", ev.target.id);
     }
 
     function drop(ev) {
         ev.preventDefault();
 		ev.dataTransfer.effectAllowed = "move";
-        var data = ev.dataTransfer.getData("Text");
-        ev.target.appendChild(document.getElementById(data));	
-    }	
+        var data = ev.dataTransfer.getData("bob");
+        ev.target.appendChild(document.getElementById(data));
+    }
 
 	</script>
 </head>

@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title>HTML5 Local Storage Support</title>
-    <script src="../javascript/modernizr-2.0.6.js"></script>
-    <script src="../javascript/jquery-1.6.2.js"></script>
+    <script src="../javascript/modernizr-2.6.2.js"></script>
+    <script src="../javascript/jquery-2.1.1.js"></script>
     <script>
 	function storeInput() {
 		if (Modernizr.localstorage) {
@@ -17,26 +17,26 @@
 			noSupport();
 		}
 	}
-	
+
 	function retrieveInput() {
 		if (Modernizr.localstorage) {
 			$("#name").val(localStorage.getItem("name"));
-		  	$("#age").val(parseInt(localStorage["age"])); 
+		  	$("#age").val(parseInt(localStorage["age"]));
 			$("#bday").val(localStorage["bday"]);
 			$("#gender").val(localStorage["gender"]);
-		  	$("#phone").val(localStorage["phone"]); 
-		  	$("#email").val(localStorage["email"]); 
+		  	$("#phone").val(localStorage["phone"]);
+		  	$("#email").val(localStorage["email"]);
 		} else {
 			noSupport();
-		}		
-	} 
-	
+		}
+	}
+
 	function clearValues() {
 		localStorage.clear();
 		$("#info").html("");
 		$(".field").val("");
 	}
-	
+
 	function showKeys() {
 		var numberOfKeys = localStorage.length;
 		var keyInfo = "The keys are: ";
@@ -48,7 +48,7 @@
 		keyInfo += keyList + "</ul>";
 		$("#info").html("There are: " + numberOfKeys + " items stored locally. " + keyInfo);
 	}
-		
+
 	function noSupport() {
 		alert("sorry, your browser doesn't support this feature");
 	}
