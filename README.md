@@ -1,5 +1,5 @@
 #HTML5 Workshop#
-So what is this? It's an HTML5 workshop that I'm giving (first run at Strange Loop https://thestrangeloop.com/) The goal is simple: get people up to speed on HTML5. Here's the conference blurb:
+So what is this? It's an HTML5 workshop that I'm delivering with a simple goal: get people up to speed on HTML5. Here's the conference blurb:
 
 ##Conference Blurb##
 Interested in HTML5? Want a chance to play around with the latest and greatest in web app development? This workshop is for you! We'll cover feature detection, web forms, the new HTML elements, take a spin around the canvas, audio, video and we'll finish up with offline/local storage and the history API.
@@ -25,7 +25,7 @@ In addition, you should have a text editor though you can certainly load the lab
 #Your Guide#
 For those that are curious about *me*, here's my bio:
 
-Nathaniel T. Schutta is a senior software engineer focussed on making usable applications. A proponent of polyglot programming, Nate has written two books on Ajax and speaks regularly at various worldwide conferences, No Fluff Just Stuff symposia, universities, and Java user groups. In addition to his day job, Nate is an adjunct professor at the University of Minnesota where he teaches students to embrace dynamic languages. Nate is also doing everything he can to rid the world of bad presentations, he helped write a book on [Presentations Patterns](http://presentationpatterns.com).
+Nathaniel T. Schutta is a software architect focussed on mobile and making usable applications. A proponent of polyglot programming, Nate has written two books on Ajax and speaks regularly at various worldwide conferences, No Fluff Just Stuff symposia, universities, and Java user groups. In addition to his day job, Nate is an adjunct professor at the University of Minnesota where he teaches students to embrace dynamic languages. Nate is also doing everything he can to rid the world of bad presentations, he helped write a book on [Presentations Patterns](http://presentationpatterns.com).
 
 You can follow me on Twitter: [@ntschutta](https://twitter.com/ntschutta)
 
