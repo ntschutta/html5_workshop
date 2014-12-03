@@ -21,10 +21,10 @@
 		}
 
 		function handleError(error) {
-		  if(error.code == 1) {
+		  if(error.code === 1) {
 		    var message = "You want to keep your location private, that's OK!"
 		  }
-		  if(error.code == 2) {
+		  if(error.code === 2) {
 		    message = "Hmm, I can't find you..."
 		  }
 		  $("#location").html("Ooops! " + message);
